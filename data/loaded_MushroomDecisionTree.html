@@ -1,0 +1,151 @@
+
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="utf-8">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load('current', {packages:['wordtree']});
+              google.charts.setOnLoadCallback(drawChart);
+
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                ['id', 'childLabel', 'parent', 'size', {role: 'style'}],
+        [0, '(root)', -1, 1, 'black'],
+[1, 'odor', 0, 1, 'black'],
+[2, '[p]→p', 1, 1, 'black'],
+[3, '[a]→e', 1, 1, 'black'],
+[4, '[l]→e', 1, 1, 'black'],
+[5, '[n]→spore-print-color', 1, 1, 'black'],
+[6, '[n]→e', 5, 1, 'black'],
+[7, '[k]→e', 5, 1, 'black'],
+[8, '[w]→gill-color', 5, 1, 'black'],
+[9, '[e]→e', 8, 1, 'black'],
+[10, '[w]→ring-type', 8, 1, 'black'],
+[11, '[e]→stalk-surface-above-ring', 10, 1, 'black'],
+[12, '[f]→e', 11, 1, 'black'],
+[13, '[k]→p', 11, 1, 'black'],
+[14, '[s]→e', 11, 1, 'black'],
+[15, '[y]→p', 11, 1, 'black'],
+[16, '[p]→stalk-surface-above-ring', 10, 1, 'black'],
+[17, '[s]→stalk-surface-below-ring', 16, 1, 'black'],
+[18, '[s]→stalk-color-above-ring', 17, 1, 'black'],
+[19, '[w]→stalk-color-below-ring', 18, 1, 'black'],
+[20, '[w]→gill-size', 19, 1, 'black'],
+[21, '[n]→p', 20, 1, 'black'],
+[22, '[b]→e', 20, 1, 'black'],
+[23, '[k]→e', 17, 1, 'black'],
+[24, '[k]→e', 16, 1, 'black'],
+[25, '[y]→e', 16, 1, 'black'],
+[26, '[g]→e', 8, 1, 'black'],
+[27, '[p]→e', 8, 1, 'black'],
+[28, '[y]→p', 8, 1, 'black'],
+[29, '[h]→e', 5, 1, 'black'],
+[30, '[r]→p', 5, 1, 'black'],
+[31, '[o]→e', 5, 1, 'black'],
+[32, '[b]→e', 5, 1, 'black'],
+[33, '[y]→e', 5, 1, 'black'],
+[34, '[f]→p', 1, 1, 'black'],
+[35, '[c]→p', 1, 1, 'black'],
+[36, '[y]→p', 1, 1, 'black'],
+[37, '[s]→p', 1, 1, 'black'],
+[38, '[m]→p', 1, 1, 'black'],
+[0, '(root)', -1, 1, 'black'],
+[1, 'odor', 0, 1, 'black'],
+[2, '[p]→p', 1, 1, 'black'],
+[3, '[a]→e', 1, 1, 'black'],
+[4, '[l]→e', 1, 1, 'black'],
+[5, '[n]→spore-print-color', 1, 1, 'black'],
+[6, '[n]→e', 5, 1, 'black'],
+[7, '[k]→e', 5, 1, 'black'],
+[8, '[w]→gill-color', 5, 1, 'black'],
+[9, '[e]→e', 8, 1, 'black'],
+[10, '[w]→ring-type', 8, 1, 'black'],
+[11, '[e]→stalk-surface-above-ring', 10, 1, 'black'],
+[12, '[f]→e', 11, 1, 'black'],
+[13, '[k]→p', 11, 1, 'black'],
+[14, '[s]→e', 11, 1, 'black'],
+[15, '[y]→p', 11, 1, 'black'],
+[16, '[p]→stalk-surface-above-ring', 10, 1, 'black'],
+[17, '[s]→stalk-surface-below-ring', 16, 1, 'black'],
+[18, '[s]→stalk-color-above-ring', 17, 1, 'black'],
+[19, '[w]→stalk-color-below-ring', 18, 1, 'black'],
+[20, '[w]→gill-size', 19, 1, 'black'],
+[21, '[n]→p', 20, 1, 'black'],
+[22, '[b]→e', 20, 1, 'black'],
+[23, '[k]→e', 17, 1, 'black'],
+[24, '[k]→e', 16, 1, 'black'],
+[25, '[y]→e', 16, 1, 'black'],
+[26, '[g]→e', 8, 1, 'black'],
+[27, '[p]→e', 8, 1, 'black'],
+[28, '[y]→p', 8, 1, 'black'],
+[29, '[h]→e', 5, 1, 'black'],
+[30, '[r]→p', 5, 1, 'black'],
+[31, '[o]→e', 5, 1, 'black'],
+[32, '[b]→e', 5, 1, 'black'],
+[33, '[y]→e', 5, 1, 'black'],
+[34, '[f]→p', 1, 1, 'black'],
+[35, '[c]→p', 1, 1, 'black'],
+[36, '[y]→p', 1, 1, 'black'],
+[37, '[s]→p', 1, 1, 'black'],
+[38, '[m]→p', 1, 1, 'black'],
+[0, '(root)', -1, 1, 'black'],
+[1, 'odor', 0, 1, 'black'],
+[2, '[p]→p', 1, 1, 'black'],
+[3, '[a]→e', 1, 1, 'black'],
+[4, '[l]→e', 1, 1, 'black'],
+[5, '[n]→spore-print-color', 1, 1, 'black'],
+[6, '[n]→e', 5, 1, 'black'],
+[7, '[k]→e', 5, 1, 'black'],
+[8, '[w]→gill-color', 5, 1, 'black'],
+[9, '[e]→e', 8, 1, 'black'],
+[10, '[w]→ring-type', 8, 1, 'black'],
+[11, '[e]→stalk-surface-above-ring', 10, 1, 'black'],
+[12, '[f]→e', 11, 1, 'black'],
+[13, '[k]→p', 11, 1, 'black'],
+[14, '[s]→e', 11, 1, 'black'],
+[15, '[y]→p', 11, 1, 'black'],
+[16, '[p]→stalk-surface-above-ring', 10, 1, 'black'],
+[17, '[s]→stalk-surface-below-ring', 16, 1, 'black'],
+[18, '[s]→stalk-color-above-ring', 17, 1, 'black'],
+[19, '[w]→stalk-color-below-ring', 18, 1, 'black'],
+[20, '[w]→gill-size', 19, 1, 'black'],
+[21, '[n]→p', 20, 1, 'black'],
+[22, '[b]→e', 20, 1, 'black'],
+[23, '[k]→e', 17, 1, 'black'],
+[24, '[k]→e', 16, 1, 'black'],
+[25, '[y]→e', 16, 1, 'black'],
+[26, '[g]→e', 8, 1, 'black'],
+[27, '[p]→e', 8, 1, 'black'],
+[28, '[y]→p', 8, 1, 'black'],
+[29, '[h]→e', 5, 1, 'black'],
+[30, '[r]→p', 5, 1, 'black'],
+[31, '[o]→e', 5, 1, 'black'],
+[32, '[b]→e', 5, 1, 'black'],
+[33, '[y]→e', 5, 1, 'black'],
+[34, '[f]→p', 1, 1, 'black'],
+[35, '[c]→p', 1, 1, 'black'],
+[36, '[y]→p', 1, 1, 'black'],
+[37, '[s]→p', 1, 1, 'black'],
+[38, '[m]→p', 1, 1, 'black'],
+
+                 ]);
+
+                var options = {
+                  maxFontSize: 16,
+                  wordtree: {
+                    format: 'explicit',
+                    type: 'suffix   '
+                  }
+                };
+
+                var chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
+                chart.draw(data, options);
+              }
+            </script>
+          </head>
+          <body>
+            <div id="wordtree_basic" style="width: 3000px; height: 1000px;"></div>
+          </body>
+        </html>
+        

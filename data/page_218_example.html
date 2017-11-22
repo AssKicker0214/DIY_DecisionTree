@@ -1,0 +1,47 @@
+
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="utf-8">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load('current', {packages:['wordtree']});
+              google.charts.setOnLoadCallback(drawChart);
+
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                ['id', 'childLabel', 'parent', 'size', {role: 'style'}],
+        [0, '(root)', -1, 1, 'black'],
+[1, 'age', 0, 1, 'black'],
+[2, '[youth]→student', 1, 1, 'black'],
+[3, '[no]→no', 2, 1, 'black'],
+[4, '[yes]→yes', 2, 1, 'black'],
+[5, '[middle_aged]→yes', 1, 1, 'black'],
+[6, '[senior]→student', 1, 1, 'black'],
+[7, '[no]→credit', 6, 1, 'black'],
+[8, '[fair]→yes', 7, 1, 'black'],
+[9, '[excellent]→no', 7, 1, 'black'],
+[10, '[yes]→credit', 6, 1, 'black'],
+[11, '[fair]→yes', 10, 1, 'black'],
+[12, '[excellent]→no', 10, 1, 'black'],
+
+                 ]);
+
+                var options = {
+                  maxFontSize: 16,
+                  wordtree: {
+                    format: 'explicit',
+                    type: 'suffix   '
+                  }
+                };
+
+                var chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
+                chart.draw(data, options);
+              }
+            </script>
+          </head>
+          <body>
+            <div id="wordtree_basic" style="width: 3000px; height: 3000px;"></div>
+          </body>
+        </html>
+        
